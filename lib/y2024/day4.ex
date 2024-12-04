@@ -93,11 +93,11 @@ defmodule Y2024.Day4 do
         (has_coord?(ms, {x - 1, y - 1}) and has_coord?(ss, {x + 1, y + 1})) or
           (has_coord?(ss, {x - 1, y - 1}) and has_coord?(ms, {x + 1, y + 1}))
 
-      second_diagonal =
+      second_diagonal? =
         (has_coord?(ms, {x - 1, y + 1}) and has_coord?(ss, {x + 1, y - 1})) or
           (has_coord?(ss, {x - 1, y + 1}) and has_coord?(ms, {x + 1, y - 1}))
 
-      first_diagonal? and second_diagonal
+      first_diagonal? and second_diagonal?
     end)
   end
 end
